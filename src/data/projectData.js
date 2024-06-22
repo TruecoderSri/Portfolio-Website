@@ -12,7 +12,8 @@ const projects = [
     Name: "Dermacare",
     image: dermaImg,
     link: "",
-    videoUrl: dermacare,
+    videoUrl:
+      "https://www.veed.io/view/3225dd23-8494-408c-95e1-f35176dd4318?panel=share",
     sourceCode: "https://github.com/goyalh4164/Dermacare",
   },
   {
