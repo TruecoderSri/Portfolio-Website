@@ -1,7 +1,6 @@
 import { useState, useEffect, lazy, Suspense } from "react";
 import projects from "../data/projectData";
 import "../App.css";
-
 function Projects() {
   const [popup, setPopup] = useState({
     isOpen: false,
@@ -30,8 +29,12 @@ function Projects() {
   }, [popup.content]);
 
   const loadReactPlayer = async () => {
-    const { default: Player } = await import("react-player/lazy");
-    setReactPlayer(() => Player);
+    try {
+      const { default: Player } = await import("react-player/lazy");
+      setReactPlayer(() => Player);
+    } catch (error) {
+      console.error("Error loading ReactPlayer:", error);
+    }
   };
 
   const LazyReactPlayer = lazy(() => import("react-player/lazy"));
