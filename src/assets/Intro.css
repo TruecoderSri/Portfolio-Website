@@ -1,0 +1,16 @@
+.fixed-card-size {
+  width: 40vw;
+  height: 32vh;
+  background: radial-gradient(
+    ellipse at 50% 49%,
+    #000000,
+    rgba(0, 0, 0, 1),
+    #323b64
+  );
+}
+
+@media screen and (max-width: 1080px) {
+  .fixed-card-size {
+    width: 80vw;
+  }
+}

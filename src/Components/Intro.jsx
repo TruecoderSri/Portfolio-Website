@@ -1,0 +1,50 @@
+import { useEffect } from "react";
+import Typed from "typed.js";
+import "../assets/Intro.css";
+
+function Intro() {
+  useEffect(() => {
+    const options1 = {
+      strings: ["Ciao,It's Srijan!"],
+      typeSpeed: 20,
+      showCursor: false,
+      onComplete: (self) => {
+        self.el.classList.remove("typing-animation");
+      },
+    };
+
+    const options2 = {
+      strings: ["Welcome to my Portfolio"],
+      typeSpeed: 50,
+      showCursor: false,
+      onComplete: (self) => {
+        self.el.classList.remove("typing-animation");
+      },
+    };
+
+    const typed1 = new Typed(".typing-animation1", options1);
+    const typed2 = new Typed(".typing-animation2", options2);
+
+    return () => {
+      typed1.destroy();
+      typed2.destroy();
+    };
+  }, []);
+
+  return (
+    <div className="Intro p-10 flex justify-center">
+      <div className="fixed-card-size lg:h-60 p-16 pt-12 lg:flex-row shadow-custom-white rounded-lg bg-gradient-to-br from-slate-600 to-black text-xl text-slate-100">
+        <h4 className="flex justify-center text-5xl p-2 lg:mb-4 typing-animation font-Brettley-Signature lg:text-6xl lg:text-left">
+          <span className="typing-animation1"></span>
+        </h4>
+        <h6 className="flex justify-center text-4xl typing-animation font-dm-serif lg:text-4xl lg:text-left text-center whitespace-normal break-words">
+          <span className="typing-animation2">
+            Welcome to <br className="block lg:hidden" /> my Portfolio
+          </span>
+        </h6>
+      </div>
+    </div>
+  );
+}
+
+export default Intro;

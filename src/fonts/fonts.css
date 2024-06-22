@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Cursive standard";
+  src: url("Cursivestandardbold.woff2") format("woff2"),
+    url("Cursivestandardbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cursive standard";
+  src: url("Cursivestandard.woff2") format("woff2"),
+    url("Cursivestandard.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Brettley Signature";
+  src: url("BrettleySignature-Regular.woff2") format("woff2"),
+    url("BrettleySignature-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("Georgia.woff2") format("woff2"), url("Georgia.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("Georgia-BoldItalic.woff2") format("woff2"),
+    url("Georgia-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("Georgia-Bold.woff2") format("woff2"),
+    url("Georgia-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("Georgia-Italic.woff2") format("woff2"),
+    url("Georgia-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
