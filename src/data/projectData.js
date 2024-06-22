@@ -1,6 +1,6 @@
-import weatherify from "../assets/weatherify.mp4";
-import shirtCustomizer from "../assets/shirtCustomizer.mp4";
-import dermacare from "../assets/Dermacare.mp4";
+import weatherify from "/weatherify.mp4";
+import shirtCustomizer from "/shirtCustomizer.mp4";
+import dermacare from "/Dermacare.mp4";
 
 import shirtImg from "../assets/shirt.png";
 import weatherImg from "../assets/weather.png";
