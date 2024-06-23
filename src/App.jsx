@@ -8,43 +8,6 @@ import Projects from "./Components/Projects";
 import Socials from "./Components/Socials";
 import Contact from "./Components/Contact";
 
-// function App() {
-//   const homeRef = useRef(null);
-//   const experienceRef = useRef(null);
-//   const projectsRef = useRef(null);
-//   const socialsRef = useRef(null);
-//   const contactRef = useRef(null);
-
-//   return (
-//     <div className="container">
-//       <Navbar
-//         homeRef={homeRef}
-//         experienceRef={experienceRef}
-//         projectsRef={projectsRef}
-//         socialsRef={socialsRef}
-//         contactRef={contactRef}
-//       />
-//       <div ref={homeRef}>
-//         <Home />
-//       </div>
-//       <div ref={experienceRef}>
-//         <Experience />
-//       </div>
-//       <div ref={projectsRef}>
-//         <Projects />
-//       </div>
-//       <div ref={socialsRef}>
-//         <Socials />
-//       </div>
-//       <div ref={contactRef}>
-//         <Contact />
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 function App() {
   const [isBlurred, setIsBlurred] = useState(false);
   const [scrollY, setScrollY] = useState(0);
@@ -59,7 +22,6 @@ function App() {
     const handleScroll = () => {
       setScrollY(window.scrollY);
 
-      // Check if the current scroll position is beyond the threshold
       if (window.scrollY > scrollThreshold) {
         setIsBlurred(true);
       } else {
@@ -74,14 +36,14 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container min-w-full">
       <Navbar
         experienceRef={experienceRef}
         projectsRef={projectsRef}
         socialsRef={socialsRef}
         contactRef={contactRef}
       />
-      <div id="home">
+      <div className="home-container">
         <Home />
       </div>
       <div
