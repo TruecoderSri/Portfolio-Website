@@ -41,7 +41,7 @@ function Projects() {
 
   return (
     <div className="projects flex flex-col ">
-      <h1 className="heading text-3xl px-10 py-4 md:text-6xl font-league-spartan text-white bg-cyan-900 m-8 rounded-xl shadow-content">
+      <h1 className="heading md:text-left text-center text-5xl px-10 py-4 md:text-6xl font-league-spartan text-white bg-cyan-900 m-8 rounded-xl shadow-content">
         Projects
       </h1>
       <div className="wrapper border-none rounded-xl shadow-wrapper mx-6 my-4 bg-stone-400">

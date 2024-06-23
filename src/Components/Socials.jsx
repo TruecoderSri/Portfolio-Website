@@ -8,7 +8,7 @@ import "../assets/Socials.css";
 function Socials() {
   return (
     <div className="heading-tile flex flex-col md:flex-row rounded-xl shadow-content bg-stone-800 m-8">
-      <h1 className="text-3xl px-10 py-4 md:text-6xl font-league-spartan text-white flex-1">
+      <h1 className="text-5xl md:text-left text-center px-10 py-4 md:text-6xl font-league-spartan text-white flex-1">
         Socials
       </h1>
       <div className="icons flex-1 flex flex-row justify-center flex-wrap gap-8 px-4 py-2 md:px-10 md:py-4">
