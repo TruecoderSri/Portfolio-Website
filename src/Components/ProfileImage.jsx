@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import profimg from "../assets/my-image.png";
+import profimg from "../assets/profile_pic.png";
 import "../assets/ProfileImage.css";
 const ProfileImage = () => {
   const [loaded, setLoaded] = useState(false);
@@ -17,9 +17,9 @@ const ProfileImage = () => {
       <img
         src={profimg}
         alt="prof-image"
-        className={`w-auto scale-75  brightness-125 -translate-y-12 md:-translate-y-24 ${
-          loaded ? "animate-slide-up" : ""
-        } `}
+        className={`w-auto mb-12 transition-all duration-500 ease-in-out transform ${
+          loaded ? "animate-slide-up" : "translate-y-10 opacity-0"
+        }`}
       />
     </div>
   );

@@ -4,7 +4,9 @@ import "react-social-icons/linkedin";
 import "react-social-icons/email";
 import "react-social-icons/instagram";
 import "react-social-icons/leetcode";
+
 import "../assets/Socials.css";
+import CustomSocialIcon from "./CustomSocialIcon";
 function Socials() {
   return (
     <div className="heading-tile flex flex-col md:flex-row rounded-xl shadow-content bg-stone-800 m-8">
@@ -35,6 +37,13 @@ function Socials() {
         <SocialIcon
           network="leetcode"
           url="https://leetcode.com/CoderSri_02"
+          target="_blank"
+          className="social-icon"
+          bgColor="black"
+        />
+        <CustomSocialIcon
+          network="geeksforgeeks"
+          url="https://www.geeksforgeeks.org/user/srijan03sri/"
           target="_blank"
           className="social-icon"
           bgColor="black"

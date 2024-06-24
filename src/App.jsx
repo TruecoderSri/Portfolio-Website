@@ -11,7 +11,7 @@ import Contact from "./Components/Contact";
 function App() {
   const [isBlurred, setIsBlurred] = useState(false);
   const [scrollY, setScrollY] = useState(0);
-  const scrollThreshold = 100; // Adjust as needed
+  const scrollThreshold = 100;
 
   const experienceRef = useRef(null);
   const projectsRef = useRef(null);

@@ -3,7 +3,7 @@ import "../App.css";
 
 function Experience() {
   return (
-    <div className="experience flex flex-col">
+    <div className="experience flex flex-col ">
       <h1 className=" heading md:text-left text-center text-4xl px-10 py-4 md:text-6xl font-league-spartan text-white shadow-content mx-8 my-4 rounded-xl bg-cyan-900 m-8">
         Work Experience
       </h1>
@@ -16,7 +16,7 @@ function Experience() {
           >
             <div className="row-1 flex flex-col md:flex-row">
               <div className="details flex-1 flex flex-col px-4 py-4">
-                <h2 className="text-lg md:text-4xl text-slate-100 my-2 font-extrabold relative">
+                <h2 className="text-lg md:text-4xl md:border-4 rounded-md md:w-fit md:px-4 md:py-2 md:bg-cyan-800 text-slate-100 my-2 font-extrabold relative">
                   {exp.Company}
                   <img
                     src={exp.image}

@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
 * {
   margin: 0;
   padding: 0;
@@ -41,7 +53,7 @@
 @keyframes fadeOut {
   0% {
     opacity: 0;
-    filter: blur(3px);
+    filter: blur(5px);
   }
   100% {
     opacity: 1;
@@ -49,7 +61,7 @@
 }
 
 .blur-out {
-  animation: fadeOut 1s ease-out forwards;
+  animation: fadeOut 2s ease-out forwards;
 }
 .wrapper {
   background: rgb(1, 10, 26);

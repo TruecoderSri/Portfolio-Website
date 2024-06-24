@@ -6,7 +6,7 @@ function Intro() {
   useEffect(() => {
     const options1 = {
       strings: ["Ciao,It's Srijan!"],
-      typeSpeed: 50,
+      typeSpeed: 40,
       showCursor: false,
       onComplete: (self) => {
         self.el.classList.remove("typing-animation");
@@ -15,7 +15,7 @@ function Intro() {
 
     const options2 = {
       strings: ["Welcome to my Portfolio"],
-      typeSpeed: 70,
+      typeSpeed: 50,
       showCursor: false,
       onComplete: (self) => {
         self.el.classList.remove("typing-animation");
