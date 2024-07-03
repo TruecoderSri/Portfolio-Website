@@ -7,6 +7,7 @@ import "../src/fonts/fonts.css";
 import Projects from "./Components/Projects";
 import Socials from "./Components/Socials";
 import Contact from "./Components/Contact";
+import AboutMe from "./Components/AboutMe";
 
 function App() {
   const [isBlurred, setIsBlurred] = useState(false);
@@ -45,6 +46,12 @@ function App() {
       />
       <div className="home-container">
         <Home />
+      </div>
+      <div
+        ref={socialsRef}
+        className={`section ${isBlurred ? "blur-out" : ""}`}
+      >
+        <AboutMe />
       </div>
       <div
         ref={experienceRef}

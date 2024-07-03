@@ -1,5 +1,5 @@
 .social-icon {
-  border-radius: 8px; /* Adjust the border-radius as needed for your square shape */
+  border-radius: 8px;
   background-color: black;
   transition: background-color 0.3s ease;
 }

@@ -5,16 +5,17 @@ function Projects() {
   const [popup, setPopup] = useState({
     isOpen: false,
     content: null,
+    title: null,
     sourceCode: "",
   });
 
   const [ReactPlayer, setReactPlayer] = useState(null);
 
-  const openPopup = (content, sourceCode, directLink) => {
+  const openPopup = (content, sourceCode, title, directLink) => {
     if (directLink) {
       window.open(content, "_blank");
     } else {
-      setPopup({ isOpen: true, content, sourceCode });
+      setPopup({ isOpen: true, content, title, sourceCode });
     }
   };
 
@@ -44,7 +45,7 @@ function Projects() {
       <h1 className="heading md:text-left text-center text-5xl px-10 py-4 md:text-6xl font-league-spartan text-white bg-cyan-900 m-8 rounded-xl shadow-content">
         Projects
       </h1>
-      <div className="wrapper border-none rounded-xl shadow-wrapper mx-6 my-4 bg-stone-400">
+      <div className="wrapper border-none rounded-xl shadow-wrapper mx-6 my-4 bg-gray-800">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-10 py-4">
           {projects.map((project, index) => (
             <div
@@ -64,6 +65,7 @@ function Projects() {
                     openPopup(
                       project.videoUrl || project.link,
                       project.sourceCode,
+                      project.Name,
                       index === 3
                     )
                   }
@@ -104,6 +106,11 @@ function Projects() {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </button>
+            <div className="title my-2">
+              <h1 className="text-2xl md:text-4xl font-bold font-dm-serif text-center mb-2">
+                {popup.title}
+              </h1>
+            </div>
             <Suspense fallback={<div>Loading...</div>}>
               {ReactPlayer && (
                 <div className="w-full h-auto mb-4 flex justify-center translate">
@@ -120,7 +127,7 @@ function Projects() {
               href={popup.sourceCode}
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-center px-8 m-2 py-0 font-serif text-blue-500 text-xl font-bold hover:text-blue-800 hover:underline md:text-4xl md:px-24 md:py-8"
+              className="block text-center px-8 m-2 py-0 font-serif text-blue-500 text-xl font-bold hover:text-blue-800 hover:underline md:text-4xl md:px-24 md:py-2"
             >
               View Source Code
             </a>

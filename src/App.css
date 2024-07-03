@@ -23,9 +23,15 @@
 .container {
   margin: 0;
   padding: 0;
-  background: #1a1a28;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(0, 0, 0) 0%,
+    rgb(64, 64, 64) 90.2%
+  );
+
+  /* background: #1a1a28;
   background: -webkit-linear-gradient(219deg, #1a1a28 0%, #26262d 100%);
-  background: linear-gradient(219deg, #1a1a28 0%, #26262d 100%);
+  background: linear-gradient(219deg, #1a1a28 0%, #26262d 100%); */
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
@@ -64,7 +70,12 @@
   animation: fadeOut 2s ease-out forwards;
 }
 .wrapper {
-  background: rgb(1, 10, 26);
+  background: linear-gradient(
+    109.6deg,
+    rgb(41, 125, 182) 3.6%,
+    rgb(77, 58, 151) 51%,
+    rgb(103, 55, 115) 92.9%
+  );
 }
 .heading {
   background: rgb(1, 10, 26);
@@ -75,7 +86,7 @@
   );
 }
 
-.content-box {
+/* .content-box {
   position: relative;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   will-change: transform;
@@ -84,6 +95,24 @@
 .content-box:hover {
   transform: translateY(-5px) scale(1.05);
   z-index: 1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.content-box > * {
+  transition: transform 0.3s ease-in-out;
+} */
+
+.content-box {
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    z-index 0.3s ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+
+.content-box:hover {
+  transform: translateY(-10px);
+  z-index: 10;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 

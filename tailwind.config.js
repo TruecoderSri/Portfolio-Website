@@ -14,6 +14,8 @@ export default {
         "league-spartan": ["League Spartan", "sans-serif"],
         Poppins: ["Poppins", "sans-serif"],
         "dm-serif": ["Dm Serif Display", "serif"],
+        "sofia-Pro": ["Sofia Pro", "sans-serif"],
+        "fontspring-demo": ["Fontspring Demo", "sans-serif"],
       },
       boxShadow: {
         "custom-white":
