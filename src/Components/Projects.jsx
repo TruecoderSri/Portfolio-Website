@@ -1,6 +1,7 @@
 import { useState, useEffect, lazy, Suspense } from "react";
 import projects from "../data/projectData";
 import "../App.css";
+import Heading from "./Heading";
 function Projects() {
   const [popup, setPopup] = useState({
     isOpen: false,
@@ -42,9 +43,7 @@ function Projects() {
 
   return (
     <div className="projects flex flex-col ">
-      <h1 className="heading md:text-left text-center text-5xl px-10 py-4 md:text-6xl font-league-spartan text-white bg-cyan-900 m-8 rounded-xl shadow-content">
-        Projects
-      </h1>
+      <Heading heading={"Projects"} />
       <div className="wrapper border-none rounded-xl shadow-wrapper mx-6 my-4 bg-gray-800">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-10 py-4">
           {projects.map((project, index) => (
@@ -60,7 +59,7 @@ function Projects() {
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 rounded-md"></div>
                 <div
-                  className="absolute inset-0 flex items-center font-dm-serif tracking-wide justify-center font-bold text-3xl bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 cursor-pointer "
+                  className="absolute inset-0 flex items-center font-dm-serif tracking-wide justify-center font-bold text-3xl bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 cursor-pointer rounded-md"
                   onClick={() =>
                     openPopup(
                       project.videoUrl || project.link,

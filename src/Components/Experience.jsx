@@ -1,12 +1,11 @@
 import workExp from "../data/workExperience";
 import "../App.css";
+import Heading from "./Heading";
 
 function Experience() {
   return (
     <div className="experience flex flex-col ">
-      <h1 className=" heading md:text-left text-center text-4xl px-10 py-4 md:text-6xl font-league-spartan text-white shadow-content mx-8 my-4 rounded-xl bg-cyan-900 m-8">
-        Work Experience
-      </h1>
+      <Heading heading={"Work Experience"} />
       <div className="companies flex flex-col md:flex-row justity-space-between gap-6 px-10 py-4">
         {workExp.map((exp, index) => (
           <div
@@ -16,12 +15,12 @@ function Experience() {
           >
             <div className="row-1 flex flex-col md:flex-row">
               <div className="details flex-1 flex flex-col px-4 py-4">
-                <h2 className="text-lg md:text-4xl md:border-4 rounded-md md:w-fit md:px-4 md:py-2 md:bg-cyan-800 text-slate-100 my-2 ml-4 font-extrabold relative">
+                <h2 className="text-xl md:text-4xl md:border-4 rounded-md md:w-fit md:px-4 md:py-2 md:bg-cyan-800 text-slate-100 my-2 ml-4 font-extrabold relative">
                   {exp.Company}
                   <img
                     src={exp.image}
                     alt="logo"
-                    className="h-8 w-16 absolute right-0 -top-2 bg-white mt-2 md:hidden"
+                    className="h-8 w-16 absolute right-0 -top-2 bg-white mt-2 md:hidden rounded-md"
                   />
                 </h2>
                 <a
@@ -32,14 +31,14 @@ function Experience() {
                 >
                   {exp.link}
                 </a>
-                <h4 className="text-lg text-left md:text-2xl ml-4 text-white font-bold">
+                <h4 className="text-2xl text-left md:text-4xl ml-4 text-slate-300 font-bold">
                   {exp.role}
                 </h4>
               </div>
               <img
                 src={exp.image}
                 alt="logo"
-                className="h-12 w-24 hidden md:block my-4 mt-8 bg-stone-50"
+                className="h-12 w-24 hidden md:block my-4 mt-8 bg-stone-50 rounded-md"
               />
             </div>
             <ul className=" list-disc marker:text-sky-500 pl-5">

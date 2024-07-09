@@ -4,6 +4,7 @@ import "react-social-icons/linkedin";
 import "react-social-icons/email";
 import "react-social-icons/instagram";
 import "react-social-icons/leetcode";
+import "../App.css";
 
 import "../assets/Socials.css";
 import CustomSocialIcon from "./CustomSocialIcon";

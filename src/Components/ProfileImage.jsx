@@ -19,7 +19,7 @@ const ProfileImage = () => {
         alt="prof-image"
         className={`w-auto mb-12 transition-all duration-500 ease-in-out transform ${
           loaded ? "animate-slide-up" : "translate-y-10 opacity-0"
-        }`}
+        }  hover:brightness-110`}
       />
     </div>
   );
