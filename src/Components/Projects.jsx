@@ -5,30 +5,33 @@ import Heading from "./Heading";
 function Projects() {
   const [popup, setPopup] = useState({
     isOpen: false,
-    content: null,
-    title: null,
+    video: "",
+    link: "",
     sourceCode: "",
+    name: null,
   });
 
   const [ReactPlayer, setReactPlayer] = useState(null);
 
-  const openPopup = (content, sourceCode, title, directLink) => {
-    if (directLink) {
-      window.open(content, "_blank");
-    } else {
-      setPopup({ isOpen: true, content, title, sourceCode });
-    }
+  const openPopup = (video, link, sourceCode, name) => {
+    setPopup({ isOpen: true, video, link, sourceCode, name });
   };
 
   const closePopup = () => {
-    setPopup({ isOpen: false, content: null, sourceCode: "" });
+    setPopup({
+      isOpen: false,
+      video: "",
+      link: "",
+      sourceCode: "",
+      name: null,
+    });
   };
 
   useEffect(() => {
-    if (popup.content && popup.content.includes("mp4")) {
+    if (popup.video && popup.video.includes("mp4")) {
       loadReactPlayer();
     }
-  }, [popup.content]);
+  }, [popup.video]);
 
   const loadReactPlayer = async () => {
     try {
@@ -42,7 +45,7 @@ function Projects() {
   const LazyReactPlayer = lazy(() => import("react-player/lazy"));
 
   return (
-    <div className="projects flex flex-col ">
+    <div className="projects flex flex-col">
       <Heading heading={"Projects"} />
       <div className="wrapper border-none rounded-xl shadow-wrapper mx-6 my-4 bg-gray-800">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-10 py-4">
@@ -51,7 +54,7 @@ function Projects() {
               key={index}
               className="project-card flex-1 px-4 py-4 gap-6 bg-stone-200 rounded-md relative hover:scale-105 hover:transition-transform ease-in-out duration-300"
             >
-              <div className="relative ">
+              <div className="relative">
                 <img
                   src={project.image}
                   alt={project.Name}
@@ -62,10 +65,10 @@ function Projects() {
                   className="absolute inset-0 flex items-center font-dm-serif tracking-wide justify-center font-bold text-3xl bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 cursor-pointer rounded-md"
                   onClick={() =>
                     openPopup(
-                      project.videoUrl || project.link,
+                      project.videoUrl,
+                      project.link,
                       project.sourceCode,
-                      project.Name,
-                      index === 3
+                      project.Name
                     )
                   }
                 >
@@ -85,7 +88,7 @@ function Projects() {
           onClick={closePopup}
         >
           <div
-            className="bg-neutral-200 rounded-md p-8 m-2 md:m-0 relative md:w-[70vw] md:h-[80vh] ring-8 ring-black"
+            className="bg-neutral-200 rounded-md p-8 m-2 md:m-0 relative md:w-[70vw] md:h-[90vh] ring-8 ring-black"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -105,16 +108,16 @@ function Projects() {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </button>
-            <div className="title my-2">
-              <h1 className="text-2xl md:text-4xl font-bold font-dm-serif text-center mb-2">
-                {popup.title}
+            <div className="title">
+              <h1 className="text-2xl md:text-4xl font-bold font-dm-serif text-center p-4 ">
+                {popup.name}
               </h1>
             </div>
             <Suspense fallback={<div>Loading...</div>}>
               {ReactPlayer && (
                 <div className="w-full h-auto mb-4 flex justify-center translate">
                   <LazyReactPlayer
-                    url={popup.content}
+                    url={popup.video}
                     controls
                     width="80%"
                     height="60%"
@@ -122,14 +125,26 @@ function Projects() {
                 </div>
               )}
             </Suspense>
-            <a
-              href={popup.sourceCode}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-center px-8 m-2 py-0 font-serif text-blue-500 text-xl font-bold hover:text-blue-800 hover:underline md:text-4xl md:px-24 md:py-2"
-            >
-              View Source Code
-            </a>
+            <div className="content flex md:flex-row md:justify-between">
+              <a
+                href={popup.sourceCode}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-left px-8 m-2 py-0 font-Poppins text-blue-500 text-xl font-bold hover:text-blue-800 hover:underline md:text-3xl md:px-24 md:py-2"
+              >
+                Source Code
+              </a>
+              {popup.link && (
+                <a
+                  href={popup.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-left px-8 m-2 py-0 font-Poppins text-blue-500 text-xl font-bold hover:text-blue-800 hover:underline md:text-3xl md:px-24 md:py-2"
+                >
+                  Project Link
+                </a>
+              )}
+            </div>
           </div>
         </div>
       )}

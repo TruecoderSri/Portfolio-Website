@@ -38,6 +38,11 @@ function App() {
 
   return (
     <div className="container min-w-full">
+      <ul className="background">
+        {Array.from({ length: 10 }).map((_, index) => (
+          <li key={index}></li>
+        ))}
+      </ul>
       <Navbar
         experienceRef={experienceRef}
         projectsRef={projectsRef}
