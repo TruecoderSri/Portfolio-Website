@@ -5,7 +5,7 @@ import "../assets/Intro.css";
 function Intro() {
   useEffect(() => {
     const options1 = {
-      strings: ["Ciao,It's Srijan!"],
+      strings: ["Hola guys,It's Srijan!"],
       typeSpeed: 40,
       showCursor: false,
       onComplete: (self) => {
@@ -37,6 +37,16 @@ function Intro() {
         <h4 className="flex justify-center text-6xl leading-2 p-2 md:ml-0 lg:mb-4 typing-animation font-Brettley-Signature lg:text-6xl lg:text-left">
           <span className="typing-animation1"></span>
         </h4>
+
+        {/* <script>
+            var stylesheet = "https://www.testdome.com/content/certificates/embed.css";
+            link = document.createElement("link");
+            link.href = stylesheet;
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            link.media = "screen,print";
+            document.getElementsByTagName("head")[0].appendChild(link);
+        </script> */}
         <h6 className="flex justify-center leading-2 text-4xl typing-animation font-dm-serif lg:text-4xl lg:text-left text-center whitespace-normal break-words">
           <span className="typing-animation2">
             Welcome to <br className="block lg:hidden" /> my Portfolio

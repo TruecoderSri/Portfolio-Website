@@ -6,7 +6,6 @@ import "react-social-icons/instagram";
 import "react-social-icons/leetcode";
 import "../App.css";
 
-import "../assets/Socials.css";
 import CustomSocialIcon from "./CustomSocialIcon";
 function Socials() {
   return (
@@ -25,6 +24,7 @@ function Socials() {
         <SocialIcon
           network="linkedin"
           url="https://linkedin.com/in/connectwithsrijan"
+          className="social-icon"
           target="_blank"
           bgColor="black"
         />
@@ -32,29 +32,29 @@ function Socials() {
           network="email"
           url="mailto:srijan.03sri@gmail.com"
           target="_blank"
-          className="social-icon"
           bgColor="black"
+          className="social-icon"
         />
         <SocialIcon
           network="leetcode"
           url="https://leetcode.com/CoderSri_02"
           target="_blank"
-          className="social-icon"
           bgColor="black"
+          className="social-icon"
         />
         <CustomSocialIcon
           network="geeksforgeeks"
           url="https://www.geeksforgeeks.org/user/srijan03sri/"
           target="_blank"
-          className="social-icon"
           bgColor="black"
+          className="social-icon"
         />
         <SocialIcon
           network="instagram"
           url="https://instagram.com/srijan_021"
           target="_blank"
-          className="social-icon"
           bgColor="black"
+          className="social-icon"
         />
       </div>
     </div>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Heading from "./Heading";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -61,7 +62,7 @@ function Contact() {
   return (
     <section className="bg-gray-900 dark:bg-gray-900">
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-neutral-100 dark:text-white">
+        <h2 className="mb-4 text-4xl md:text-6xl tracking-tight font-extrabold text-center text-stone-400 dark:text-white">
           Contact Us
         </h2>
         <p className="mb-8 lg:mb-16 font-light text-center text-neutral-200 dark:text-gray-400 sm:text-xl">

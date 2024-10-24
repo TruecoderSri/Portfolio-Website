@@ -7,7 +7,7 @@ const workExp = [
     image: zivakaLogo,
     link: "https://www.zivaka.com/",
     desc: [
-      "Developed frontend for an all new admin panel along with API Integration for a client project, creating multi-component utility pages including a custom event calendar, visual aids like graphs and charts for analyzation. Providedrole-based access control for regulated data access, successfully bringing the firm onto the digital map, doubling operational efficiency and stimulating growth",
+      "Developed frontend for an all new admin panel along with API Integration for a client project, creating multi-component utility pages including a custom event calendar, visual aids like graphs and charts for analyzation. Provided role-based access control for regulated data access, successfully bringing the firm onto the digital map with more than a 1000 daily visitors, doubling operational efficiency and stimulating growth",
       "Optimized new employee onboarding with a modern and responsive suite of 7 electronic forms logging details into a centralized table simplifying form creation, enhancing accessibility, and ensuring secure data storage.",
     ],
   },

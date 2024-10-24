@@ -10,9 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.10.2",
     "@emailjs/browser": "^4.3.3",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
     "dotenv": "^16.4.5",
     "flowbite": "^2.3.0",
+    "framer-motion": "^11.11.9",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

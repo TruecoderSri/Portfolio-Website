@@ -33,28 +33,10 @@
 
 @font-face {
   font-family: "Georgia";
-  src: url("Georgia-BoldItalic.woff2") format("woff2"),
-    url("Georgia-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Georgia";
   src: url("Georgia-Bold.woff2") format("woff2"),
     url("Georgia-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Georgia";
-  src: url("Georgia-Italic.woff2") format("woff2"),
-    url("Georgia-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
   font-display: swap;
 }
 
@@ -73,24 +55,6 @@
     url("SofiaPro-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Sofia Pro";
-  src: url("SofiaPro-Light.woff2") format("woff2"),
-    url("SofiaPro-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Sofia Pro";
-  src: url("SofiaPro-LightItalic.woff2") format("woff2"),
-    url("SofiaPro-LightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
   font-display: swap;
 }
 
@@ -122,15 +86,6 @@
 }
 
 @font-face {
-  font-family: "FONTSPRING DEMO - Proxima Nova Cond";
-  src: url("FONTSPRINGDEMO-ProximaNovaCondBlackRegular.woff2") format("woff2"),
-    url("FONTSPRINGDEMO-ProximaNovaCondBlackRegular.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "FONTSPRING DEMO - Proxima Nova";
   src: url("FONTSPRINGDEMO-ProximaNovaMediumRegular.woff2") format("woff2"),
     url("FONTSPRINGDEMO-ProximaNovaMediumRegular.woff") format("woff");
@@ -145,23 +100,5 @@
     url("FONTSPRINGDEMO-ProximaNovaRegular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "FONTSPRING DEMO - Proxima Nova";
-  src: url("FONTSPRINGDEMO-ProximaNovaSemiboldRegular.woff2") format("woff2"),
-    url("FONTSPRINGDEMO-ProximaNovaSemiboldRegular.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "FONTSPRING DEMO - Proxima Nova";
-  src: url("FONTSPRINGDEMO-ProximaNovaItalic.woff2") format("woff2"),
-    url("FONTSPRINGDEMO-ProximaNovaItalic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
   font-display: swap;
 }

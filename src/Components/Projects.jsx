@@ -52,7 +52,7 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="project-card flex-1 px-4 py-4 gap-6 bg-stone-200 rounded-md relative hover:scale-105 hover:transition-transform ease-in-out duration-300"
+              className="project-card flex-1 px-4 py-4 gap-6 border-2 border-purple bg-stone-200 rounded-md relative hover:scale-105 hover:transition-transform ease-in-out duration-300"
             >
               <div className="relative">
                 <img
@@ -62,7 +62,7 @@ function Projects() {
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 rounded-md"></div>
                 <div
-                  className="absolute inset-0 flex items-center font-dm-serif tracking-wide justify-center font-bold text-3xl bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 cursor-pointer rounded-md"
+                  className="absolute inset-0 flex items-center font-dm-serif tracking-wide justify-center font-bold text-3xl bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 cursor-pointer rounded-md"
                   onClick={() =>
                     openPopup(
                       project.videoUrl,
@@ -88,7 +88,7 @@ function Projects() {
           onClick={closePopup}
         >
           <div
-            className="bg-neutral-200 rounded-md p-8 m-2 md:m-0 relative md:w-[70vw] md:h-[90vh] ring-8 ring-black"
+            className="bg-neutral-200 rounded-md p-8 m-2 md:m-0 relative md:w-[70vw] md:h-[90vh] "
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -125,7 +125,7 @@ function Projects() {
                 </div>
               )}
             </Suspense>
-            <div className="content flex md:flex-row md:justify-between">
+            <div className="content flex md:flex-row justify-between">
               <a
                 href={popup.sourceCode}
                 target="_blank"
