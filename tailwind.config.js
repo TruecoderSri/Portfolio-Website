@@ -26,6 +26,19 @@ export default {
         wrapper: "rgba(0, 0, 0, 0.4) 0px 30px 90px",
         heading: "rgb(38, 57, 77) 0px 20px 30px -10px;",
       },
+      animation: {
+        rotBGimg: "rotBGimg 5s linear infinite",
+      },
+      keyframes: {
+        rotBGimg: {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(360deg)",
+          },
+        },
+      },
     },
   },
   // eslint-disable-next-line no-undef

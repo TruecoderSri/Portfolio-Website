@@ -1,4 +1,4 @@
-import resume from "../assets/Resume";
+import resume from "../assets/Resume.pdf";
 import PropTypes from "prop-types";
 import { useState } from "react";
 
