@@ -75,30 +75,3 @@
   font-style: normal;
   font-display: swap;
 }
-
-@font-face {
-  font-family: "FONTSPRING DEMO - Proxima Nova ExCn";
-  src: url("FONTSPRINGDEMO-ProximaNovaExCnBlackRegular.woff2") format("woff2"),
-    url("FONTSPRINGDEMO-ProximaNovaExCnBlackRegular.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "FONTSPRING DEMO - Proxima Nova";
-  src: url("FONTSPRINGDEMO-ProximaNovaMediumRegular.woff2") format("woff2"),
-    url("FONTSPRINGDEMO-ProximaNovaMediumRegular.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "FONTSPRING DEMO - Proxima Nova";
-  src: url("FONTSPRINGDEMO-ProximaNovaRegular.woff2") format("woff2"),
-    url("FONTSPRINGDEMO-ProximaNovaRegular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}

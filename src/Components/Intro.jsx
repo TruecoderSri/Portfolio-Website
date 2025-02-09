@@ -15,7 +15,7 @@ function Intro() {
 
     const options2 = {
       strings: ["Welcome to my Portfolio"],
-      typeSpeed: 50,
+      typeSpeed: 70,
       showCursor: false,
       onComplete: (self) => {
         self.el.classList.remove("typing-animation");
