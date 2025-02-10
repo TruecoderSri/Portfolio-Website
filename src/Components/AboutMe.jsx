@@ -12,7 +12,7 @@ function AboutMe() {
           </h1>
           <div className="content">
             <p className="text-lg leading-loose md:text-2xl text-gray-200 font-cursive-standard italic">
-              Greetings Everyone! As a third-year undergrad in Computer Science
+              Greetings Everyone! As a final year undergrad in Computer Science
               Engineering, I have developed a solid foundation in programming
               languages like C++ and gained practical experience in frontend
               development. Through my internships, I've had fruitful experiences

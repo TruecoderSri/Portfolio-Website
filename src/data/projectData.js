@@ -14,6 +14,8 @@ const projects = [
   {
     Name: "Dermacare",
     image: dermaImg,
+    description:
+      "Dermacare is a web-based platform designed to analyze skin conditions based on user uploaded photos. The project provides a user-friendly tool for early detection and diagnosis of skin diseases, enhancing overall skin health awareness.",
     link: "",
     videoUrl: dermacare,
     sourceCode: "https://github.com/goyalh4164/Dermacare",
@@ -21,8 +23,11 @@ const projects = [
   {
     Name: "Quizzy",
     image: quizzyImg,
+    description:
+      "Quizzy is a dynamic, interactive and an accessible platform that enables users to create, take, and manage quizzes. Users can sign up, log in, create their own quiz in any domain area and make it available for the world, take part in quizzes, and see their scores. The platform is built with a Node.js backend, a MongoDB database, and a React frontend styled with Tailwind CSS.",
     link: "https://truecodersri-quizzy.vercel.app",
     videoUrl: quizzy,
+
     sourceCode: "https://github.com/TruecoderSri/Quizzy",
   },
   // {
@@ -35,6 +40,8 @@ const projects = [
   {
     Name: "Weatherify",
     image: weatherImg,
+    description:
+      "This is a AI powered weather site with detailed analysis and summary of current weather of any city around the world along with graphs and various other parameters.",
     link: "",
     videoUrl: weatherify,
     sourceCode: "https://github.com/TruecoderSri/Weatherify",
@@ -42,6 +49,8 @@ const projects = [
   {
     Name: "Delhi-Dijkstras-Path",
     image: dijkstrasImg,
+    description:
+      "In this project we use dijkstras algorithm to find the nearest distance between any 2 places in the city which're visualized as graph nodes.",
     link: "https://dijkstras-path.vercel.app",
     videoUrl: ddp,
     sourceCode: "https://github.com/TruecoderSri/delhi-dijkstras-path",

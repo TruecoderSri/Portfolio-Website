@@ -9,12 +9,14 @@ function Projects() {
     link: "",
     sourceCode: "",
     name: null,
+    description: "",
   });
 
   const [ReactPlayer, setReactPlayer] = useState(null);
 
-  const openPopup = (video, link, sourceCode, name) => {
-    setPopup({ isOpen: true, video, link, sourceCode, name });
+  const openPopup = (video, link, sourceCode, name, description) => {
+    setPopup({ isOpen: true, video, link, sourceCode, name, description });
+    // document.body.style.overflow = "hidden";
   };
 
   const closePopup = () => {
@@ -24,7 +26,9 @@ function Projects() {
       link: "",
       sourceCode: "",
       name: null,
+      description: "",
     });
+    // document.body.style.overflow = "auto";
   };
 
   useEffect(() => {
@@ -68,7 +72,8 @@ function Projects() {
                       project.videoUrl,
                       project.link,
                       project.sourceCode,
-                      project.Name
+                      project.Name,
+                      project.description
                     )
                   }
                 >
@@ -84,11 +89,11 @@ function Projects() {
 
       {popup.isOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 "
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm"
           onClick={closePopup}
         >
           <div
-            className="bg-neutral-200 rounded-md p-8 m-2 md:m-0 relative md:w-[70vw] md:h-[90vh] "
+            className="bg-neutral-200 rounded-md p-8 m-2 md:m-0 relative w-[90%] md:w-[70vw] md:h-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -113,24 +118,34 @@ function Projects() {
                 {popup.name}
               </h1>
             </div>
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense
+              fallback={
+                <div className="font-Poppins text-2xl font-semibold">
+                  Loading...
+                </div>
+              }
+            >
               {ReactPlayer && (
                 <div className="w-full h-auto mb-4 flex justify-center translate">
                   <LazyReactPlayer
                     url={popup.video}
                     controls
-                    width="80%"
+                    width="70%"
                     height="60%"
                   />
                 </div>
               )}
             </Suspense>
+            <div className="flex p-4 m-2 text-medium font-poppins md:text-large font-semibold shadow-2xl rounded-lg bg-slate-50">
+              {popup.description}
+            </div>
+
             <div className="content flex md:flex-row justify-between">
               <a
                 href={popup.sourceCode}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-left px-8 m-2 py-0 font-Poppins text-blue-500 text-xl font-bold hover:text-blue-800 hover:underline md:text-3xl md:px-24 md:py-2"
+                className="block text-left p-4 m-2 font-sofia-Pro text-sky-700 text-xl font-bold hover:text-sky-900 hover:underline md:text-3xl"
               >
                 Source Code
               </a>
@@ -139,7 +154,7 @@ function Projects() {
                   href={popup.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-left px-8 m-2 py-0 font-Poppins text-blue-500 text-xl font-bold hover:text-blue-800 hover:underline md:text-3xl md:px-24 md:py-2"
+                  className="block text-left p-4 m-2 font-sofia-Pro text-sky-700 text-xl font-bold hover:text-sky-900 hover:underline md:text-3xl"
                 >
                   Project Link
                 </a>

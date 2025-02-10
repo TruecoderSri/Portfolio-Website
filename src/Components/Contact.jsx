@@ -1,6 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import Heading from "./Heading";
+// import Heading from "./Heading";
 
 function Contact() {
   const [formData, setFormData] = useState({
