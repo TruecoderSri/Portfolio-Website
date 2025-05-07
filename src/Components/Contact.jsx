@@ -134,6 +134,15 @@ function Contact() {
           </div>
         </form>
       </div>
+      <div className="flex justify-center mx-2 my-1 p-1">
+        <a
+          className="font-sans text-sky-100 text-xl underline hover:text-sky-300"
+          href="https://github.com/TruecoderSri/portfolio-website"
+          target="_blank"
+        >
+          Source Code
+        </a>
+      </div>
     </section>
   );
 }

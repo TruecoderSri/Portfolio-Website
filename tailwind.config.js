@@ -7,15 +7,25 @@ export default {
   ],
   theme: {
     extend: {
+      // fontFamily: {
+      //   "cursive-standard": ["Cursive standard", "sans-serif"],
+      //   "Brettley-Signature": ["Brettley Signature", "sans-serif"],
+      //   georgia: ["Georgia", "sans-serif"],
+      //   "league-spartan": ["League Spartan", "sans-serif"],
+      //   Poppins: ["Poppins", "sans-serif"],
+      //   "dm-serif": ["Dm Serif Display", "serif"],
+      //   "sofia-Pro": ["Sofia Pro", "sans-serif"],
+      //   "fontspring-demo": ["Fontspring Demo", "sans-serif"],
+      // },
       fontFamily: {
-        "cursive-standard": ["Cursive standard", "sans-serif"],
-        "Brettley-Signature": ["Brettley Signature", "sans-serif"],
-        georgia: ["Georgia", "sans-serif"],
-        "league-spartan": ["League Spartan", "sans-serif"],
-        Poppins: ["Poppins", "sans-serif"],
-        "dm-serif": ["Dm Serif Display", "serif"],
-        "sofia-Pro": ["Sofia Pro", "sans-serif"],
-        "fontspring-demo": ["Fontspring Demo", "sans-serif"],
+        "cursive-standard": ["Cursive standard"],
+        "Brettley-Signature": ["Brettley Signature"],
+        georgia: ["Georgia"],
+        "league-spartan": ["League Spartan"],
+        Poppins: ["Poppins"],
+        "dm-serif": ["Dm Serif Display"],
+        "sofia-Pro": ["Sofia Pro"],
+        "fontspring-demo": ["Fontspring Demo"],
       },
       boxShadow: {
         "custom-white":

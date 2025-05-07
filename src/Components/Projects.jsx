@@ -120,7 +120,7 @@ function Projects() {
             </div>
             <Suspense
               fallback={
-                <div className="font-Poppins text-2xl font-semibold">
+                <div className="flex font-Poppins text-2xl font-semibold justify-center">
                   Loading...
                 </div>
               }
