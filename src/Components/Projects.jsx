@@ -1,6 +1,8 @@
 import { useState, useEffect, lazy, Suspense } from "react";
 import projects from "../data/projectData";
 import "../App.css";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 import Heading from "./Heading";
 function Projects() {
   const [popup, setPopup] = useState({
@@ -58,15 +60,21 @@ function Projects() {
               key={index}
               className="project-card flex-1 px-4 py-4 gap-6 border-2 border-purple bg-stone-200 rounded-md relative hover:scale-105 hover:transition-transform ease-in-out duration-300"
             >
+              <h2 className="text-2xl md:text-4xl font-dm-serif text-slate-800 text-center px-4 py-2 underline flex justify-center ">
+                {project.Name}
+              </h2>
               <div className="relative">
                 <img
                   src={project.image}
                   alt={project.Name}
                   className="z-0 w-full h-auto rounded-md"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-50 rounded-md"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-50 rounded-md flex justify-end items-end pr-2 hover:opacity-0">
+                  <FaArrowRightLong className="text-white text-2xl md:text-3xl pb-1" />
+                </div>
+
                 <div
-                  className="absolute inset-0 flex items-center font-dm-serif tracking-wide justify-center font-bold text-3xl bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300 cursor-pointer rounded-md"
+                  className="absolute inset-0 flex items-center font-dm-serif tracking-wide justify-center font-bold text-3xl bg-black bg-opacity-100 opacity-0 hover:opacity-50 transition-opacity duration-300 cursor-pointer rounded-md"
                   onClick={() =>
                     openPopup(
                       project.videoUrl,
@@ -77,10 +85,13 @@ function Projects() {
                     )
                   }
                 >
-                  <h2 className="text-2xl md:text-4xl font-Montserrat-sans text-white text-center">
-                    {project.Name}
-                  </h2>
+                  <span className="text-white font-sans text-lg md:text-2xl opacity-70">
+                    {" "}
+                    Click Here{" "}
+                  </span>
                 </div>
+
+                <div className="absolute inset-x-0 bottom-0 flex justify-center pb-2 transition-opacity duration-300 opacity-100 group-hover:opacity-0"></div>
               </div>
             </div>
           ))}

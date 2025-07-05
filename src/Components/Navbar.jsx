@@ -33,7 +33,7 @@ function Navbar({
           href={resume}
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute top-4 left-4 md:hidden py-2 px-4 text-blue-600 rounded-md border-2 hover:bg-blue-800"
+          className="absolute top-4 left-4 md:hidden py-2 px-4 text-blue-600 rounded-md border-2 hover:bg-custom-gradient hover:text-white"
         >
           Resume
         </a>
@@ -124,7 +124,7 @@ function Navbar({
                 href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="-mt-4 py-2 px-4 text-blue-600 rounded-md border-2 hover:text-white hover:brightness-120 hover:bg-blue-800 focus:outline-none focus:ring focus:ring-blue-600"
+                className="-mt-4 py-2 px-4 text-blue-600 rounded-md border-2 hover:text-white hover:brightness-120 hover:bg-custom-gradient focus:outline-none focus:ring focus:ring-blue-600"
               >
                 Resume
               </a>

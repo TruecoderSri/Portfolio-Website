@@ -219,18 +219,18 @@
 }
 
 .wrapper {
-  /* background: linear-gradient(
+  background: linear-gradient(
     109.6deg,
     rgb(41, 125, 182) 3.6%,
     rgb(77, 58, 151) 51%,
     rgb(103, 55, 115) 92.9%
-  ); */
-  background-image: linear-gradient(
+  );
+  /* background-image: linear-gradient(
     to top,
     #1e3c72 0%,
     #1e3c72 1%,
     #2a5298 100%
-  );
+  ); */
 }
 
 .heading {

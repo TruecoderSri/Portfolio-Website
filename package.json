@@ -20,6 +20,7 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
     "react-lazyload": "^3.2.1",
     "react-player": "^2.16.0",
     "react-router-dom": "^6.23.1",

@@ -7,7 +7,7 @@ function Intro() {
 
   useEffect(() => {
     const typed1 = new Typed(".typing-animation1", {
-      strings: ["Hola guys, It's Srijan!"],
+      strings: ["Hola guys, It's Srijan !"],
       typeSpeed: 40,
       showCursor: false,
       onComplete: (self) => {
@@ -25,7 +25,7 @@ function Intro() {
     if (!showSecondLine) return;
 
     const typed2 = new Typed(".typing-animation2", {
-      strings: ["Welcome to my Portfolio"],
+      strings: ["Welcome to my Portfolio "],
       typeSpeed: 100,
       showCursor: false,
       onComplete: (self) => {
@@ -48,7 +48,7 @@ function Intro() {
         {showSecondLine && (
           <h6 className="flex justify-center leading-2 text-4xl typing-animation font-dm-serif lg:text-4xl lg:text-left text-center whitespace-normal break-words">
             <span className="typing-animation2 font-dm-serif">
-              Welcome to <br className="block lg:hidden" /> my Portfolio
+              Welcome to <br className="block lg:hidden" /> my Portfolio !
             </span>
           </h6>
         )}
