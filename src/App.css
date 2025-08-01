@@ -268,7 +268,7 @@
 
 .social-icon:hover {
   transform: scale(1.2);
-  border: 2px solid skyblue;
+  border: 2px solid violet;
 }
 .heading-tile {
   background: rgb(1, 10, 26);
