@@ -1,24 +1,37 @@
 import zivakaLogo from "../assets/zivaka-logo.png";
 import acmLogo from "../assets/acm-logo.svg";
+import mnmLogo from "../assets/MnM.png";
 const workExp = [
+  {
+    role: "Web Developer",
+    Company: "Maya & Maya Enterprises",
+    image: mnmLogo,
+    link: "https://maya-and-maya.com",
+    desc: [
+      "Built a scalable business website from the ground up, with integrated modules for user authentication, fleet tracking, trip package creation, and automated form handling, centralizing customer and internal workflows.",
+      "Engineered automation systems linking the website with Google Sheets via Apps Script, including auto trip creation UI and a Vision API-based OCR for fuel receipts, significantly improving processing speed and reducing manual errors observed during testing.",
+    ],
+  },
   {
     role: "ReactJs Developer",
     Company: "Zivaka",
     image: zivakaLogo,
-    link: "https://www.zivaka.com/",
+    link: "https://www.zivaka.com",
     desc: [
-      "Developed frontend for an all new admin panel along with API Integration for a client project, creating multi-component utility pages including a custom event calendar, visual aids like graphs and charts for analyzation. Provided role-based access control for regulated data access, successfully bringing the firm onto the digital map with more than a 1000 daily visitors, doubling operational efficiency and stimulating growth",
-      "Optimized new employee onboarding with a modern and responsive suite of 7 electronic forms logging details into a centralized table simplifying form creation, enhancing accessibility, and ensuring secure data storage.",
+      "Developed a modular, responsive frontend for a business portal, integrating 10+ APIs with dynamic dashboards, charts, and comprehensive custom calendars for better visibility.",
+      "Implemented role-based access control (RBAC) using React Router for secure, tiered user experiences.",
+      "Replaced manual onboarding with responsive 7 e-forms, improving accuracy and streamlining HR operations.",
     ],
   },
   {
     role: "Full Stack Developer",
     Company: "USS ACM",
     image: acmLogo,
-    link: "https://usict.acm.org/",
+    link: "https://usict.acm.org",
     desc: [
-      "Built a custom member portal from scratch for 200+ users using MERN stack with properly defined profile and a detailed project section hence fueling user engagement created using CRUD operations and data structure principles and concepts.",
-      "Crafted a string of 7 internal team forms in React, comprising announcements, team management and more thus facilitating efficient task management and resulting in a 50% reduction in form creation time.",
+      "Developed a MERN-based member portal used by a growing community user base, enabling personalized profiles and real-time project showcase with full CRUD functionality.",
+      "Automated internal operations by replacing manual processes with reusable templates, decreasing setup time from hours to minutes.",
+      "Collaborated with 3 teams to ensure seamless deployment, CI/CD integration, and feature iteration using Git workflows.",
     ],
   },
 ];

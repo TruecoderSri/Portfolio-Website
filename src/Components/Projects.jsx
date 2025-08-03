@@ -58,7 +58,7 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="project-card flex-1 px-4 py-4 gap-6 border-2 border-purple bg-stone-200 rounded-md relative hover:scale-105 hover:transition-transform ease-in-out duration-300"
+              className="project-card flex-1 px-4 py-4 gap-6 border-2 border-purple bg-stone-200 rounded-md relative hover:scale-105 hover:transition-transform ease-in-out duration-300 hover:brightness-110 "
             >
               <h2 className="text-2xl md:text-4xl font-dm-serif text-slate-800 text-center px-4 py-2 underline flex justify-center ">
                 {project.Name}
